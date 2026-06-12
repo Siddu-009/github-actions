@@ -16,5 +16,7 @@ jobs:
         run: date
       - name: Step3
         run: hostname
+      - name: Fail Step
+        run: abcxyz
       - name: Step4
         run: echo "Finished"
