@@ -1,14 +1,20 @@
-name: My First Workflow
+name: Learning Steps
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
-  hello-job:
-
+  demo:
     runs-on: ubuntu-latest
 
     steps:
-
-      - name: Print Message
-        run: echo "Hello Siddhu"
+      - name: Step1
+        run: echo "Start"
+      - name: Step2
+        run: date
+      - name: Step3
+        run: hostname
+      - name: Step4
+        run: echo "Finished"
